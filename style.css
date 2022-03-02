@@ -1,0 +1,57 @@
+/*
+===============================
+ Typography Start Form Here 
+===============================
+ */
+
+body,input{
+    font-family: 'Poppins', sans-serif;
+ }
+h3{
+    font-size: 22px;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+#showPhone{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+}
+
+.makeCard,#showDetails{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+
+#spinner{
+    display: none;
+}
+
+
+
+
+/*
+=====================================
+ Responsive For All Media Device
+ ====================================
+  */
+
+@media(max-width : 991px){
+    #showPhone{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+}
+}
+
+@media(max-width : 500px){
+    #showPhone{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 2rem;
+    }
+}

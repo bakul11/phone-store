@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--========Bootstrap Added========-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--========Google Fonts Added========-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <!--========Font-Awesome Added========-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!--========Main CSS File Added========-->
+    <link rel="stylesheet" href="style.css">
+    <!--========Favicon Added========-->
+    <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
+    <title>Mobile Phone Store in Worldwide</title>
+
+</head>
+
+<body class="container">
+    <!--===========Logo Added===========-->
+    <div class="logo mt-3 mb-4">
+        <img src="images/logo.png" alt="" class="img-fluid d-block mx-auto">
+    </div>
+    <!--======Show Phone Details In UI======-->
+    <div class="col-lg-8 mx-auto mb-4">
+        <div id="showDetails"></div>
+    </div>
+    <!--========Search Area Start Form Here========-->
+    <div class="search-area row">
+        <div class="col-lg-6 mx-auto">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control form-control-lg"
+                    placeholder="Please Search Your favourite Phones" aria-label="Recipient's username"
+                    aria-describedby="basic-addon2" id="searchInput">
+                <button class="input-group-text bg-primary text-light fw-bold" id="searchBtn">Search Now</button>
+            </div>
+        </div>
+    </div>
+    <!--======Data Loading Spinner======-->
+    <div id="spinner" class="text-center"><img src="images/loader.gif" alt=""></div>
+    <!--======Error Message Show======-->
+    <p class="text-danger fw-bold text-center mt-1" id="errorMessage"></p>
+    <!--======Show Phone In UI======-->
+    <div id="showPhone"></div>
+
+    <!--======Main JavaScript File Here======-->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
